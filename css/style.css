@@ -709,5 +709,250 @@ main {
     }
 }
 
+```css
+/* =========================================
+   NEXT HOME GAME
+   ========================================= */
+
+.next-game {
+
+    max-width: 1100px;
+
+    margin: 35px auto 0;
+
+    padding: 0 25px;
+
+}
+
+
+.next-game-label {
+
+    background: #d71920;
+
+    color: white;
+
+    font-weight: 800;
+
+    font-size: 0.9rem;
+
+    letter-spacing: 1px;
+
+    padding: 10px 18px;
+
+    display: inline-block;
+
+    border-radius: 8px 8px 0 0;
+
+}
+
+
+.next-game-content {
+
+    background: #111111;
+
+    color: white;
+
+    border-radius: 0 10px 10px 10px;
+
+    padding: 25px 30px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
+
+}
+
+
+.next-game-date {
+
+    min-width: 90px;
+
+    text-align: center;
+
+    border-right: 1px solid #555555;
+
+    padding-right: 30px;
+
+}
+
+
+.next-month {
+
+    display: block;
+
+    font-size: 0.9rem;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+}
+
+
+.next-day {
+
+    display: block;
+
+    font-size: 3rem;
+
+    line-height: 1;
+
+    font-weight: 800;
+
+}
+
+
+.next-year {
+
+    display: block;
+
+    font-size: 0.8rem;
+
+    color: #cccccc;
+
+}
+
+
+.next-game-details {
+
+    flex: 1;
+
+}
+
+
+.next-game-details h2 {
+
+    font-size: 1.5rem;
+
+    margin-bottom: 8px;
+
+}
+
+
+.next-game-details h2 span {
+
+    color: #d71920;
+
+    font-size: 1rem;
+
+    margin: 0 5px;
+
+}
+
+
+.next-game-info {
+
+    color: #dddddd;
+
+    margin: 3px 0;
+
+}
+
+
+.next-game-oio {
+
+    margin-top: 10px;
+
+    color: #ffffff;
+
+}
+
+
+.next-game-oio strong {
+
+    color: #ffcc00;
+
+}
+
+
+.next-game-button {
+
+    background: #d71920;
+
+    color: white;
+
+    padding: 12px 18px;
+
+    border-radius: 6px;
+
+    font-weight: bold;
+
+    white-space: nowrap;
+
+    transition: background 0.2s ease,
+                transform 0.2s ease;
+
+}
+
+
+.next-game-button:hover {
+
+    background: #b9141a;
+
+    transform: translateY(-2px);
+
+}
+
+
+/* ---------- NEXT GAME MOBILE ---------- */
+
+@media (max-width: 700px) {
+
+    .next-game {
+
+        margin-top: 25px;
+
+        padding: 0 15px;
+
+    }
+
+
+    .next-game-content {
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        text-align: center;
+
+        gap: 20px;
+
+        padding: 25px 20px;
+
+    }
+
+
+    .next-game-date {
+
+        border-right: none;
+
+        border-bottom: 1px solid #555555;
+
+        padding-right: 0;
+
+        padding-bottom: 15px;
+
+    }
+
+
+    .next-game-details h2 {
+
+        font-size: 1.25rem;
+
+    }
+
+
+    .next-game-button {
+
+        display: inline-block;
+
+    }
+
+}
+
 
 
