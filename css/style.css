@@ -561,4 +561,153 @@ main {
 }
 
 
+/* =========================================
+   SCHEDULE PAGE
+   ========================================= */
+
+.schedule-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.game-card {
+    display: grid;
+
+    grid-template-columns: 110px 1fr auto;
+
+    align-items: center;
+
+    gap: 25px;
+
+    padding: 22px;
+
+    background: #f7f7f7;
+
+    border-radius: 8px;
+
+    border-left: 5px solid #d71920;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.game-card:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ---------- GAME DATE ---------- */
+
+.game-date {
+    text-align: center;
+
+    background: #111111;
+
+    color: white;
+
+    border-radius: 8px;
+
+    padding: 10px;
+}
+
+.game-date .month {
+    display: block;
+
+    font-size: 0.85rem;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+}
+
+.game-date .day {
+    display: block;
+
+    font-size: 2.3rem;
+
+    font-weight: 800;
+
+    line-height: 1.1;
+}
+
+.game-date .year {
+    display: block;
+
+    font-size: 0.8rem;
+
+    color: #cccccc;
+}
+
+
+/* ---------- GAME DETAILS ---------- */
+
+.game-details h4 {
+    font-size: 1.25rem;
+
+    margin-bottom: 8px;
+
+    color: #111111;
+}
+
+.game-details p {
+    margin: 3px 0;
+
+    color: #666666;
+
+    font-size: 0.95rem;
+}
+
+
+/* ---------- GAME STATUS ---------- */
+
+.game-status span {
+    display: inline-block;
+
+    padding: 7px 13px;
+
+    border-radius: 20px;
+
+    background: #111111;
+
+    color: white;
+
+    font-size: 0.8rem;
+
+    font-weight: bold;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.5px;
+}
+
+
+/* ---------- SCHEDULE MOBILE ---------- */
+
+@media (max-width: 700px) {
+
+    .game-card {
+        grid-template-columns: 80px 1fr;
+
+        gap: 15px;
+    }
+
+    .game-status {
+        grid-column: 2;
+    }
+
+    .game-date .day {
+        font-size: 1.8rem;
+    }
+
+    .game-details h4 {
+        font-size: 1.05rem;
+    }
+}
+
+
 
