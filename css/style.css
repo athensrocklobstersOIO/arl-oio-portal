@@ -343,3 +343,222 @@ main {
 }
 
 
+
+
+/* =========================================
+   GAME DAY PAGE
+   ========================================= */
+
+.page-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 45px 25px 60px;
+}
+
+
+/* ---------- PAGE HEADER ---------- */
+
+.page-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.page-header h2 {
+    font-size: 2.5rem;
+    color: #111111;
+    margin-bottom: 10px;
+}
+
+.page-header p {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #666666;
+    font-size: 1.05rem;
+}
+
+
+/* ---------- INFORMATION SECTIONS ---------- */
+
+.info-section {
+    background: white;
+    margin-bottom: 25px;
+    padding: 30px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.info-section h3 {
+    font-size: 1.5rem;
+    color: #111111;
+
+    margin-bottom: 18px;
+
+    padding-bottom: 10px;
+
+    border-bottom: 2px solid #d71920;
+}
+
+.info-section p {
+    color: #555555;
+}
+
+
+/* ---------- CHECKLIST ---------- */
+
+.checklist {
+    list-style: none;
+    padding: 0;
+}
+
+.checklist li {
+    position: relative;
+
+    padding: 12px 15px 12px 38px;
+
+    margin-bottom: 8px;
+
+    background: #f7f7f7;
+
+    border-radius: 6px;
+
+    color: #444444;
+}
+
+.checklist li::before {
+    content: "✓";
+
+    position: absolute;
+
+    left: 14px;
+    top: 11px;
+
+    font-weight: bold;
+
+    color: #d71920;
+}
+
+
+/* ---------- IMPORTANT BOX ---------- */
+
+.important-box {
+    margin-top: 20px;
+
+    padding: 20px;
+
+    background: #f7f7f7;
+
+    border-left: 5px solid #d71920;
+
+    border-radius: 6px;
+}
+
+.important-box strong {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #111111;
+}
+
+.important-box p {
+    margin: 0;
+}
+
+
+/* ---------- POSITION GRID ---------- */
+
+.position-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 20px;
+}
+
+.position-card {
+    padding: 25px;
+
+    background: #f7f7f7;
+
+    border-radius: 8px;
+
+    border-left: 4px solid #111111;
+}
+
+.position-card h4 {
+    margin-bottom: 8px;
+
+    font-size: 1.15rem;
+
+    color: #111111;
+}
+
+.position-card p {
+    font-size: 0.95rem;
+
+    color: #666666;
+}
+
+
+/* ---------- CONTACT BOX ---------- */
+
+.contact-box {
+    margin-top: 10px;
+
+    padding: 35px;
+
+    background: #111111;
+
+    color: white;
+
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+.contact-box h3 {
+    font-size: 1.5rem;
+
+    margin-bottom: 10px;
+}
+
+.contact-box p {
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    color: #dddddd;
+}
+
+
+/* ---------- GAME DAY MOBILE ---------- */
+
+@media (max-width: 700px) {
+
+    .page-content {
+        padding: 35px 15px 45px;
+    }
+
+    .page-header h2 {
+        font-size: 2rem;
+    }
+
+    .info-section {
+        padding: 25px 20px;
+    }
+
+    .position-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-box {
+        padding: 30px 20px;
+    }
+}
+
+
+
