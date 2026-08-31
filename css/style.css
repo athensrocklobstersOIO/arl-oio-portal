@@ -953,5 +953,550 @@ main {
 
 }
 
+/* =========================================
+   GAME DAY PAGE
+   ========================================= */
+
+.game-day-page {
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding: 45px 25px 70px;
+
+}
+
+
+/* ---------- PAGE TITLE ---------- */
+
+.page-title {
+
+    text-align: center;
+
+    margin-bottom: 35px;
+
+}
+
+
+.page-title h2 {
+
+    font-size: 2.5rem;
+
+    color: #111111;
+
+    margin-bottom: 8px;
+
+}
+
+
+.page-title p {
+
+    color: #666666;
+
+    font-size: 1.05rem;
+
+}
+
+
+
+/* =========================================
+   GAME DAY — NEXT GAME
+   ========================================= */
+
+.game-day-next {
+
+    margin-bottom: 45px;
+
+}
+
+
+.game-day-next-label {
+
+    background: #d71920;
+
+    color: white;
+
+    display: table;
+
+    margin: 0 auto;
+
+    padding: 9px 20px;
+
+    border-radius: 8px 8px 0 0;
+
+    font-weight: 800;
+
+    font-size: 0.85rem;
+
+    letter-spacing: 1px;
+
+}
+
+
+.game-day-next-content {
+
+    background: #111111;
+
+    color: white;
+
+    border-radius: 10px;
+
+    padding: 30px 35px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 35px;
+
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
+
+}
+
+
+.game-day-date {
+
+    min-width: 90px;
+
+    text-align: center;
+
+    border-right: 1px solid #555555;
+
+    padding-right: 30px;
+
+}
+
+
+.game-day-date span {
+
+    display: block;
+
+    font-size: 0.9rem;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+}
+
+
+.game-day-date strong {
+
+    display: block;
+
+    font-size: 3rem;
+
+    line-height: 1;
+
+}
+
+
+.game-day-date small {
+
+    display: block;
+
+    color: #cccccc;
+
+    font-size: 0.8rem;
+
+}
+
+
+.game-day-matchup {
+
+    text-align: center;
+
+}
+
+
+.game-day-matchup h2 {
+
+    font-size: 1.5rem;
+
+    margin-bottom: 8px;
+
+}
+
+
+.game-day-matchup h2 span {
+
+    color: #d71920;
+
+    font-size: 1rem;
+
+    margin: 0 5px;
+
+}
+
+
+.game-day-matchup p {
+
+    color: #dddddd;
+
+    margin: 3px 0;
+
+}
+
+
+.game-day-times {
+
+    display: flex;
+
+    gap: 20px;
+
+}
+
+
+.game-day-times div {
+
+    text-align: center;
+
+    border-left: 1px solid #555555;
+
+    padding-left: 20px;
+
+}
+
+
+.game-day-times span {
+
+    display: block;
+
+    color: #bbbbbb;
+
+    font-size: 0.8rem;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+
+}
+
+
+.game-day-times strong {
+
+    display: block;
+
+    font-size: 1.2rem;
+
+    margin-top: 3px;
+
+}
+
+
+
+/* =========================================
+   GAME DAY SECTIONS
+   ========================================= */
+
+.game-day-section {
+
+    background: white;
+
+    border-radius: 10px;
+
+    padding: 30px 35px;
+
+    margin-bottom: 25px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+}
+
+
+.section-heading {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    border-bottom: 2px solid #eeeeee;
+
+    padding-bottom: 12px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.section-heading span {
+
+    font-size: 1.6rem;
+
+}
+
+
+.section-heading h2 {
+
+    font-size: 1.45rem;
+
+    color: #111111;
+
+}
+
+
+
+/* =========================================
+   CHECKLISTS
+   ========================================= */
+
+.checklist {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 12px 30px;
+
+}
+
+
+.checklist-item {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 12px;
+
+    padding: 10px 0;
+
+}
+
+
+.checklist-item > span {
+
+    font-size: 1.2rem;
+
+    color: #d71920;
+
+    flex-shrink: 0;
+
+}
+
+
+.checklist-item p {
+
+    color: #444444;
+
+}
+
+
+
+/* =========================================
+   INFORMATION BOXES
+   ========================================= */
+
+.info-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+}
+
+
+.info-box {
+
+    background: #f7f7f7;
+
+    border-left: 4px solid #d71920;
+
+    border-radius: 6px;
+
+    padding: 20px;
+
+}
+
+
+.info-box h3 {
+
+    font-size: 1.05rem;
+
+    margin-bottom: 8px;
+
+    color: #111111;
+
+}
+
+
+.info-box p {
+
+    color: #555555;
+
+    font-size: 0.95rem;
+
+}
+
+
+
+/* =========================================
+   IMPORTANT NOTICE
+   ========================================= */
+
+.game-day-important {
+
+    background: #111111;
+
+    color: white;
+
+    border-radius: 10px;
+
+    padding: 30px 35px;
+
+    text-align: center;
+
+    margin-top: 35px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+
+}
+
+
+.game-day-important h2 {
+
+    color: #ffffff;
+
+    margin-bottom: 10px;
+
+}
+
+
+.game-day-important p {
+
+    max-width: 750px;
+
+    margin: 0 auto;
+
+    color: #dddddd;
+
+}
+
+
+.game-day-important strong {
+
+    color: #ffffff;
+
+}
+
+
+
+/* =========================================
+   GAME DAY MOBILE
+   ========================================= */
+
+@media (max-width: 800px) {
+
+    .game-day-page {
+
+        padding: 35px 15px 50px;
+
+    }
+
+
+    .game-day-next-content {
+
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 20px;
+
+    }
+
+
+    .game-day-date {
+
+        border-right: none;
+
+        border-bottom: 1px solid #555555;
+
+        padding-right: 0;
+
+        padding-bottom: 15px;
+
+    }
+
+
+    .game-day-times {
+
+        justify-content: center;
+
+    }
+
+
+    .game-day-times div {
+
+        border-left: none;
+
+        padding-left: 0;
+
+    }
+
+
+    .checklist {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .info-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    .page-title h2 {
+
+        font-size: 2rem;
+
+    }
+
+
+    .game-day-section {
+
+        padding: 25px 20px;
+
+    }
+
+
+    .game-day-next-content {
+
+        padding: 25px 20px;
+
+    }
+
+
+    .game-day-matchup h2 {
+
+        font-size: 1.25rem;
+
+    }
+
+
+    .game-day-times {
+
+        flex-direction: column;
+
+        gap: 10px;
+
+    }
+
+}
+
+
 
 
