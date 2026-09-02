@@ -1509,7 +1509,16 @@ main {
     font-size: 0.85rem !important;
     font-style: italic;
 }
+/* Game Day checklist links */
+.game-day-link {
+    color: #0066cc;
+    text-decoration: underline;
+    font-weight: 600;
+}
 
+.game-day-link:hover {
+    color: #004999;
+}
 
 
 
