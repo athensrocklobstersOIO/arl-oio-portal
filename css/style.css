@@ -1576,4 +1576,180 @@ a:focus-visible {
    END OF STYLESHEET
    ========================================= */
 
+/* =========================================
+   FINAL VISUAL OVERRIDES
+   ========================================= */
 
+/* Space between Next Home Game and dashboard */
+section.next-game {
+    margin-bottom: 70px !important;
+}
+
+/* Make the footer compact and high contrast */
+.site-footer {
+    background: linear-gradient(
+        135deg,
+        var(--arl-navy-dark) 0%,
+        var(--arl-navy) 100%
+    ) !important;
+
+    color: #ffffff !important;
+    margin-top: 70px !important;
+    padding: 30px 20px 15px !important;
+    border-top: 4px solid var(--arl-red) !important;
+    text-align: center;
+}
+
+.professional-footer {
+    max-width: 950px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 25px;
+    padding-bottom: 22px;
+}
+
+/* Tiny but visible team logo */
+.footer-logo {
+    width: 38px !important;
+    height: 38px !important;
+    object-fit: contain;
+}
+
+/* Footer team branding */
+.footer-brand-block {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: left;
+}
+
+.footer-brand-block h3 {
+    color: #ffffff !important;
+    font-size: 0.92rem;
+    margin-bottom: 1px;
+}
+
+.footer-brand-block p {
+    color: #9dbbd5 !important;
+    font-size: 0.7rem;
+}
+
+/* Social media area */
+.footer-social-block {
+    text-align: center;
+}
+
+.footer-social-block h4,
+.footer-contact-block h4 {
+    color: #ffffff !important;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.9px;
+    margin-bottom: 9px;
+}
+
+.footer-social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+
+/* Tiny social buttons */
+.social-icon {
+    width: 30px !important;
+    height: 30px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #8faeca !important;
+    border-radius: 50%;
+    background: transparent;
+}
+
+.social-icon svg {
+    width: 13px !important;
+    height: 13px !important;
+    fill: #ffffff !important;
+    display: block;
+}
+
+.social-icon:hover {
+    background: var(--arl-red) !important;
+    border-color: var(--arl-red) !important;
+}
+
+/* Contact */
+.footer-contact-block {
+    text-align: right;
+}
+
+.footer-contact-block a {
+    display: block;
+    color: #ffffff !important;
+    font-size: 0.72rem;
+    margin-bottom: 5px;
+}
+
+.footer-contact-block .official-site-link {
+    color: #9dbbd5 !important;
+    font-weight: 700;
+}
+
+.footer-bottom {
+    max-width: 950px;
+    margin: 0 auto;
+    padding-top: 12px;
+    border-top: 1px solid #40586f;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    color: #91a2b2 !important;
+    font-size: 0.65rem;
+}
+
+/* Footer responsive layout */
+@media (max-width: 800px) {
+
+    .professional-footer {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-social-block {
+        grid-column: 1 / -1;
+        grid-row: 2;
+    }
+
+}
+
+@media (max-width: 550px) {
+
+    .professional-footer {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .footer-brand-block {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-social-block {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .footer-contact-block {
+        text-align: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 4px;
+    }
+
+}
